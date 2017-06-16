@@ -1,0 +1,24 @@
+extends layoutHome
+
+block content
+    div.sectionPage
+        div.titles
+            h1= title 
+        img(src="images/LogoBenedict.png", alt="Benedict Kempkes", width="20%" height="20%")
+        div.titles
+            h1 Web Developer
+    div.sectionPage
+        div.container-flip
+            div.card
+                figure.front
+                    img(src="images/LogoAngular.png", alt="AngularJS Logo", style='background-color:#b37d4e')
+                figure.back
+                    button More Info
+        div.container-flip
+            div.card
+                figure.front
+                    img(src="images/LogoReact.png", alt="ReactJS Logo", style='background-color:#cd5360')
+                figure.back
+                    button More Info
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="javascripts/home.js")

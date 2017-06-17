@@ -1,24 +1,40 @@
 extends layoutHome
 
 block content
-    div.sectionPage
+    //TopPage
+    div#topSection
         div.titles
-            h1= title 
-        img(src="images/LogoBenedict.png", alt="Benedict Kempkes", width="20%" height="20%")
+            h1= title
+        img#logoTop(src="images/LogoBenedict.png", alt="Benedict Kempkes")
         div.titles
             h1 Web Developer
-    div.sectionPage
+    //BottomPage
+    div#bottomSection
         div.container-flip
-            div.card
+            div.card(style='background-color:#b37d4e')
                 figure.front
-                    img(src="images/LogoAngular.png", alt="AngularJS Logo", style='background-color:#b37d4e')
+                    img.logoBottom(src="images/LogoAngular.png", alt="AngularJS Logo")
                 figure.back
+                    h2 Personal Blog
+                    ul
+                        li Blogs about sport
+                        li Blogs about games
+                        li Blogs about activities
+                        li Blogs about achievments
+                        li Developed with AngularJS, Bootstrap and MongoDB
                     button More Info
         div.container-flip
-            div.card
+            div.card(style='background-color:#cd5360')
                 figure.front
-                    img(src="images/LogoReact.png", alt="ReactJS Logo", style='background-color:#cd5360')
+                    img.logoBottom(src="images/LogoReact.png", alt="ReactJS Logo")
                 figure.back
+                    h2 Tracking Goals
+                    ul
+                        li Goals per Week
+                        li Goals per Month
+                        li Goals per Year
+                        li Developed with ReactJS
                     button More Info
+               
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
     script(src="javascripts/home.js")

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".card").hover(function(){
+    $(".card").click(function(){
         $(this).toggleClass('flipped');
     });
 });

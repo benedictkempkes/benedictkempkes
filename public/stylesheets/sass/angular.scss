@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+//variables
+$font-family: 'Roboto Condensed', sans-serif;
+$orange: #FF3B3F;
+$darkgrey: #A9A9A9;
+$blue: #CAEBF2;
+$lightgrey: #EFEFEF;
+
+body{
+    font-family: $font-family;
+    background-color: $lightgrey;
+}
+
+nav {
+    background-color: $lightgrey;
+    color: $darkgrey;
+}
+
+.navbar-brand{
+    color: $orange;
+}
+
+.navbar-nav > li > a, .dropdown-menu > li > a {
+   @extend nav;
+}
+
+.dropdown-menu {
+    @extend nav;
+    border: none;
+    box-shadow: none;
+}

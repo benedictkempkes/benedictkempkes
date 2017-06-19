@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #EFEFEF; }
+
+nav, .navbar-nav > li > a, .dropdown-menu > li > a, .dropdown-menu {
+  background-color: #EFEFEF;
+  color: #A9A9A9; }
+
+.navbar-brand {
+  color: #FF3B3F; }
+
+.dropdown-menu {
+  border: none;
+  box-shadow: none; }

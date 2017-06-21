@@ -11,10 +11,14 @@ router.get('/angular', function(req, res, next) {
   res.render('angularViews/angular', { title: 'Persönlicher Blog' });
 });
 
+//router.get('/angular/:name', function(req, res){
+//    var name = req.params.name;
+//    res.render('angularViews/partials/' + name)
+//})
+
 /* GET React page*/
 router.get('/react', function(req, res, next) {
   res.render('reactViews/react', { title: 'Ziel Verfolgung' });
 });
-
 
 module.exports = router;

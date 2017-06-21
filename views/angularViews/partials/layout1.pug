@@ -1,0 +1,35 @@
+nav.navbar
+    .container
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            a.navbar-brand(href='#') Logo
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            ul.nav.navbar-nav
+                li
+                    a(href='#') Homepage 
+                li
+                    a(href='/angular/layout1') Layout 1
+                li.dropdown
+                    a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                        | Dropdown 
+                        span.caret
+                        ul.dropdown-menu
+                            li
+                                a(href='/angular/layout2') Layout 2
+                            li
+                                a(href='/angular/layout3') Layout 3
+                            li
+                                a(href='/angular/layout4') Layout 4
+                li
+                    a(href='/angular/layout5') Layout 5
+                li
+                    a(href='/angular/layout6') Layout 6
+            form.navbar-form.navbar-right
+                .form-group
+                    input.form-control(type="text", placeholder="Suche...")
